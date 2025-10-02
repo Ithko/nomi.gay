@@ -47,46 +47,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Cascadia Code';
-  src: url('/fonts/woff2/CascadiaCode-Light.woff2') format('woff2'),
-    url("/fonts/woff/CascadiaCode-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cascadia Code';
-  src: url('/fonts/woff2/CascadiaCode-Regular.woff2') format('woff2'),
-    url("/fonts/woff/CascadiaCode-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cascadia Code';
-  src: url('/fonts/woff2/CascadiaCode-Medium.woff2') format('woff2'),
-    url("/fonts/woff/CascadiaCode-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cascadia Code';
-  src: url('/fonts/woff2/CascadiaCode-SemiBold.woff2') format('woff2'),
-    url("/fonts/woff/CascadiaCode-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cascadia Code';
-  src: url('/fonts/woff2/CascadiaCode-Bold.woff2') format('woff2'),
-    url("/fonts/woff/CascadiaCode-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
 body{
 	font-family: 'Fira Code', monospace;
 	font-weight: 500;
@@ -94,6 +54,5 @@ body{
 @supports (font-variation-settings: normal) {
 	body {
 		font-family: 'Fira Code VF', monospace;
-		font-variation-settings: 'wght' 500;
 	}
 }
