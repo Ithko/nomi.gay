@@ -9,7 +9,7 @@
 		{
 			"title": "Witix",
 			"alt_text": "An 88x31 button: 'Witix now!' with a bi anarchist symbol next to it.",
-			"remote_url": "witix.png",
+			"local_url": "witix.png",
 			"site_url": "https://witix.pages.gay/"
 		},
 		{
@@ -27,7 +27,7 @@
 		{
 			"title": "Cadence",
 			"alt_text": "The text &quot;cadence now!&quot; on a purple background. There is a moon-shaped logo on the left side and a tiny star in the bottom right.",
-			"remote_url": "cadence_now.png",
+			"local_url": "cadence.png",
 			"site_url": "https://cadence.moe/"
 		},
 		{
@@ -39,31 +39,37 @@
 		{
 			"title": "Dimden",
 			"alt_text": "The text 'DIMDEN' in big cyan block letters on a dark background, and 'ホテル' (hotel in japanese) in purple under that. There is a slight CRT scanline effect applied to the whole thing.",
-			"remote_url": "dimden.gif",
+			"local_url": "dimden.gif",
 			"site_url": "https://dimden.dev/"
 		},
 		{
 			"title": "Luzie",
 			"alt_text": "An 88x31 button: Animated 'Luzie's Kennel' text in a rainbow gradient on a black background",
-			"remote_url": "https://luziekennel.nekoweb.org/graphics/link.gif",
+			"local_url": "luzie.gif",
 			"site_url": "https://luziekennel.nekoweb.org/"
+		},
+		{
+			"title": "Fabryka Jaboli",
+			"alt_text": "jabol",
+			"local_url": "jabol-88x31.png",
+			"site_url": "https://fabrykajabo.li/"
 		}
 	],
 	"other": [
 		{
-			"title": "Estrogen",
+			"title": "Powered by estrogen",
 			"alt_text": "An 88x31 button, showing a rotating estrogen pill with text 'Powered by estrogen' next to it.",
 			"local_url": "estropill.gif",
 			"site_url": "https://transfemscience.org/articles/transfem-intro/"
 		},
 		{
-			"title": "Arch",
+			"title": "ArchLinux",
 			"alt_text": "An 88x31 button, showing the arch linux logo",
 			"local_url": "archlinux.png",
 			"site_url": "https://archlinux.org/"
 		},
 		{
-			"title": "Neovim",
+			"title": "Made with Neovim",
 			"alt_text": "An 88x31 button, showing the neovim logo and text 'made with neovim'",
 			"local_url": "neovim.png",
 			"site_url": "https://neovim.io/"
@@ -72,7 +78,7 @@
 			"title": "Created by a human with a heart",
 			"alt_text": "An 88x31 button, showing a heart on rainbow and text 'created by a human with a heart'",
 			"local_url": "created-by-a-human-with-a-heart.png",
-			"site_url": "https://cadence.moe/blog/2024-10-05-created-by-a-human-badges"
+			"site_url": "https://cadence.moe/blog/2024-10-05-created-by-a-human-badges/"
 		},
 		{
 			"title": "Trans rights now!",
@@ -93,7 +99,7 @@
 			"site_url": "https://ublockorigin.com/"
 		},
 		{
-			"title": "Rust",
+			"title": "Rust programming language",
 			"alt_text": "An 88x31 button, showing the rust lang logo",
 			"local_url": "rust.png",
 			"site_url": "https://rust-lang.org/"
@@ -117,7 +123,7 @@
 			"site_url": "https://genderdysphoria.fyi/"
 		},
 		{
-			"title": "Firefox",
+			"title": "Firefox (fuck chromium)",
 			"alt_text": "An 88x31 button, showing 'Take back the web' text next to the firefox logo.",
 			"local_url": "firefox.png",
 			"site_url": "https://www.mozilla.org/en-US/firefox/new/"
@@ -126,13 +132,13 @@
 			"title": "Free Palestine",
 			"alt_text": "An 88x31 button, showing 'Free Palestine' text next to a black long haired person with a palestinian flag.",
 			"local_url": "freepalestine.png",
-			"site_url": "https://arab.org/click-to-help/palestine"
+			"site_url": "https://arab.org/click-to-help/palestine/"
 		},
 		{
 			"title": "Google Chrome IS EVIL! (so is whole Google tbf)",
 			"alt_text": "An 88x31 button, showing 'Google Chrome IS EVIL!' text next to a spinning pentagram.",
 			"local_url": "chrmevil.gif",
-			"site_url": "https://www.howtogeek.com/881609/why-you-should-stop-using-google-chrome-today/"
+			"site_url": "https://github.com/ungoogled-software/ungoogled-chromium/"
 		},
 		{
 			"title": "Powered by Linux (Xenia)",

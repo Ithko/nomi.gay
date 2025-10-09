@@ -1,0 +1,24 @@
+{
+	"sites": [
+		{
+			"label": "Main",
+			"url": "/",
+			"icon": "home"
+		},
+		{
+			"label": "About",
+			"url": "/about/",
+			"icon": "face"
+		},
+		{
+			"label": "Blog",
+			"url": "/blog/",
+			"icon": "typewriter"
+		},
+		{
+			"label": "Analytics",
+			"url": "/analytics/",
+			"icon": "poll"
+		}
+	]
+}
