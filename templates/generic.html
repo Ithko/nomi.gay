@@ -16,14 +16,11 @@
 <meta property="og:image" content="{{ config.extra.og_ico }}">
 {% endif %}
 {% if page.extra.video %}
-<meta property="og:video" content="{{ config.base_url }}/media/{{ page.extra.video }}" />
+<meta property="og:video" content="{{ config.base_url }}/media/videos/{{ page.extra.video }}" />
+<meta property="og:video:type" content="{{ page.extra.video_type }}" />
 <meta property="og:video:width" content="{{ page.extra.video_width }}" />
 <meta property="og:video:height" content="{{ page.extra.video_height }}" />
-<meta property="og:video:type" content="application/mp4" />
-<meta property="og:video" content="{{ config.base_url }}/media/{{ page.extra.video }}" />
-<meta property="og:video:type" content="video/mp4" />
-<meta property="og:video" content="{{ config.base_url }}/media/{{ page.extra.video }}" />
-<meta property="og:video:type" content="text/html" />
+<meta property="og:video:alt" content="{{ page.extra.video_alt }}" />
 {% endif %}
 {% endblock head %}
 

@@ -23,3 +23,4 @@ I do most of my actual coding in Rust and C, scripting in python and bash, but I
 - Signal: [nomi\_ithko.01](https://signal.me/#eu/ql9PsKDRxrxv8odQpfDIRG2vB2r8Kew8yz0PA4WtL91q1fjraJRO94EA9vI14_14)
 
 ### License and stuff
+This website's [source code](https://github.com/Ithko/nomi.gay) and all of its content is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless stated otherwise. If you want to use any of my content for commercial purposes - please reach out to me.
