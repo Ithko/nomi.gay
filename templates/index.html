@@ -30,7 +30,7 @@
 	<p>So, well - I host some certain services like media server stuff. If you <i>really</i> want to join one of my services just <a href="/about/">text me</a> and after some unknown amount of time I might actually accept your request.</p>
 	<p>The <a href="/blog/">blog</a> will get rolling one day. If you are reading this, it means that this day has not arrived yet.</p>
 	<p>I am really sorry :P</p>
-	<p>Maybe one day you will be able to read my shitty opinions on extremely niche stuff.</p>
+	<p>Maybe one day you will be able to read my shitty opinions on extremely niche stuff. For now, you can do that on <a rel="me" href="https://fedi.fabrykajabo.li/@nomi">my fedi profile</a>.</p>
 	<h3>Webrings</h3>
 	<noscript>
 	<p>Yeah, so most of the webrings here kinda need javascript to work. They won't even show up in the box due to you disabling it, though.</p>
@@ -97,6 +97,6 @@
 		<div class="button"><a href="{{ being.site_url }}" target="_blank"><img src="{% if being.remote_url %}{{ being.remote_url }}{% else %}/media/88x31/beings/{{ being.local_url }}{% endif %}" title="{{ being.title }}" alt="{{ being.alt_text }}"></a></div>
 		{% endfor %}
 	</div>
-	Content (<a href="https://github.com/Ithko/nomi.gay">source</a>) licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Made by <a href="/about/">Nomi</a>.
+	Content (<a href="https://github.com/Ithko/nomi.gay">source</a>) licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">{{ macros::icon(icon="copyright") }}CC BY-NC-SA 4.0</a>. Made by <a href="/about/">Nomi</a>.
 </footer>
 {% endblock content %}

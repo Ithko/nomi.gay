@@ -21,6 +21,7 @@ I do most of my actual coding in Rust and C, scripting in python and bash, but I
 ### Reach out:
 - Mail: [{{ icon(icon="email") }}contact@nomi.gay](mailto:contact@nomi.gay) ([PGP](/nomikey.pem))
 - Signal: [{{ icon(icon="message-text") }}nomi\_ithko.01](https://signal.me/#eu/ql9PsKDRxrxv8odQpfDIRG2vB2r8Kew8yz0PA4WtL91q1fjraJRO94EA9vI14_14)
+- Fediverse: [{{ icon(icon="typewriter") }}nomi@fabrykajabo.li](https://fedi.fabrykajabo.li/@nomi)
 
 ### License and stuff
 This website's [source code](https://github.com/Ithko/nomi.gay) and all of its content is licensed under [{{ icon(icon="copyright") }}CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless stated otherwise. If you want to use any of my content for commercial purposes - please reach out to me.
