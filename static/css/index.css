@@ -51,4 +51,5 @@ footer{
 #w95{
 	width: 309px;
 	height: 75px;
+	object-fit: cover;
 }
