@@ -50,6 +50,5 @@ footer{
 }
 #w95{
 	width: 309px;
-	height: 75px;
-	object-fit: cover;
+	aspect-ratio: 103 / 25;
 }
