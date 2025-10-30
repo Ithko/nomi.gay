@@ -19,28 +19,21 @@
 <article class="box">
 	<h2>Welcome to my website<noscript> without javascript</noscript>!</h2>
 	<hr>
-	<h3>Hi, my name is <a href="/about/">Nomi</a>.</h3>
-	<p>I'm a woman-ish creature currently residing in <a href="https://youtu.be/2yusdx60_aw">Poland</a>, studying computer spellcasting and other related stuff. If you are not a douchebag feel free to <a href="/about/">message me</a>.</p>
+	<h3>Hi, my name is <a href="/about/">{{ macros::icon(icon="face")}}Nomi</a>.</h3>
+	<p>I'm a woman-ish creature currently residing in <a href="https://youtu.be/2yusdx60_aw">{{ macros::icon(icon="video-box") }}Poland</a>, studying computer spellcasting and other related stuff. If you are not a douchebag feel free to <a href="/about/">message me</a>.</p>
 	<noscript>
 		<p>The only thing that uses javascript on this website are the webrings. You are not really missing out on a lot, lmao.</p>
 	</noscript>
-	<h3>Here is some basic info about me:</h3>
-	<ul>
-		<li>Age: Born too late to explore the seas and too early to explore the space.</li>
-		<li>Weight: 2kN±100N at the surface of Jupiter.</li>
-		<li>Height: If I was a ballistic missile traveling at mach 10 facing straight my head would hit you ~550µs earlier than my feet.</li>
-		<li>Gender: I already told you I am a woman-ish creature, what else do you need to know?</li>
-		
-
-		<li>Pronouns: <a href="https://pronouns.page/@Nomi_"><i class="icon">{% set data = load_data(path="static/media/md-icons/tag.svg") %}{{ data | safe}}</i>she/they</a></li>
-		<li>Languages: PL (native), EN (good), DE (some basics)</li>
-		<li>Hobbies: Low-level and embedded programming, shitposting, fixing stuff (usually after I break it), biking</li>
-		<li>Fav. weather: Cloudy, chilly (~10°C) day.</li>
-	</ul>
-	<p>I do most of my actual coding in Rust and C, scripting in python and bash, but I know other programming languages too. Rust is a very great language btw, especially when it comes to error handling.</p>
+	<p>This is my very own, personal cave - built with <a href="https://getzola.org/">Zola</a>. Feel free to explore as much as you want (althrough this place is still unfinished).</p>
+	<p>I have no idea when will the next site expansion come. Probably once I am in a better place, mentally.</p>
+	<h3>Stuff I do here</h3>
+	<p>So, well - I host some certain services like media server stuff. If you <i>really</i> want to join one of my services just <a href="/about/">text me</a> and after some unknown amount of time I might actually accept your request.</p>
+	<p>The <a href="/blog/">blog</a> will get rolling one day. If you are reading this, it means that this day has not arrived yet.</p>
+	<p>I am really sorry :P</p>
+	<p>Maybe one day you will be able to read my shitty opinions on extremely niche stuff.</p>
 	<h3>Webrings</h3>
 	<noscript>
-	<p>Yeah, so most of the webrings here kinda need javascript to work. They won't even show up in the box due to you disabling it though.</p>
+	<p>Yeah, so most of the webrings here kinda need javascript to work. They won't even show up in the box due to you disabling it, though.</p>
 	</noscript>
 	<div class="webrings box">
 		<script src="https://sitesforpalestine.neocities.org/ring.js"></script>
@@ -74,8 +67,8 @@
 		<h2>Links</h2>
 		<hr>
 		<ul class="links">
-			<li><a href="">Status page</a> (soon)</li>
-			<li><a href="https://jelly.nomi.gay">Jellyfin</a></li>
+			<li><a href="https://status.nomi.gay/status/">{{ macros::icon(icon="link-variant") }}Status page</a></li>
+			<li><a href="https://jelly.nomi.gay/">{{ macros::icon(icon="link-variant") }}Jellyfin</a></li>
 			<li>More stuff about to come soon™</li>
 		</ul>
 	</div>
@@ -90,7 +83,7 @@
 </div>
 <footer class="box">
 	{% set buttons = load_data(path="content/data/88x31.json") %}
-	<h4>Stuff</h4>
+	<h4>Generic 88x31's (not mine)</h4>
 	<div class="buttons">
 		{% for being in buttons["other"] %}
 		<div class="button"><a href="{{ being.site_url }}" target="_blank"><img src="{% if being.remote_url %}{{ being.remote_url }}{% else %}/media/88x31/other/{{ being.local_url }}{% endif %}" title="{{ being.title }}" alt="{{ being.alt_text }}"></a></div>
@@ -98,11 +91,12 @@
 	</div>
 	<p>
 	</p>
-	<h4>Frens and some other beings with cool sites I found while browsing the web:</h4>
+	<h4>Frens and other beings I found while browsing the web (very much not mine, except the first one):</h4>
 	<div class="buttons">
 		{% for being in buttons["beings"] %}
 		<div class="button"><a href="{{ being.site_url }}" target="_blank"><img src="{% if being.remote_url %}{{ being.remote_url }}{% else %}/media/88x31/beings/{{ being.local_url }}{% endif %}" title="{{ being.title }}" alt="{{ being.alt_text }}"></a></div>
 		{% endfor %}
 	</div>
+	Content (<a href="https://github.com/Ithko/nomi.gay">source</a>) licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Made by <a href="/about/">Nomi</a>.
 </footer>
 {% endblock content %}

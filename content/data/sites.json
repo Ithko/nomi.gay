@@ -2,22 +2,22 @@
 	"sites": [
 		{
 			"label": "Main",
-			"url": "/",
+			"href": "/",
 			"icon": "home"
 		},
 		{
 			"label": "About",
-			"url": "/about/",
+			"href": "/about/",
 			"icon": "face"
 		},
 		{
 			"label": "Blog",
-			"url": "/blog/",
+			"href": "/blog/",
 			"icon": "typewriter"
 		},
 		{
-			"label": "Analytics",
-			"url": "/analytics/",
+			"label": "Status",
+			"href": "https://status.nomi.gay/status/",
 			"icon": "poll"
 		}
 	]

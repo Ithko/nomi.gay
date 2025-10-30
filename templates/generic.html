@@ -16,11 +16,11 @@
 <meta property="og:image" content="{{ config.extra.og_ico }}">
 {% endif %}
 {% if page.extra.video %}
-<meta property="og:video" content="{{ config.base_url }}/media/videos/{{ page.extra.video }}" />
-<meta property="og:video:type" content="{{ page.extra.video_type }}" />
-<meta property="og:video:width" content="{{ page.extra.video_width }}" />
-<meta property="og:video:height" content="{{ page.extra.video_height }}" />
-<meta property="og:video:alt" content="{{ page.extra.video_alt }}" />
+<meta property="og:video" content="{{ config.base_url }}/media/videos/{{ page.extra.og_video }}" />
+<meta property="og:video:type" content="{{ page.extra.og_video_type }}" />
+<meta property="og:video:width" content="{{ page.extra.og_video_width }}" />
+<meta property="og:video:height" content="{{ page.extra.og_video_height }}" />
+<meta property="og:video:alt" content="{{ page.extra.og_video_alt }}" />
 {% endif %}
 {% endblock head %}
 
@@ -35,7 +35,7 @@
 {% block content %}
 <article class="box">
 	<h1>{{ page.title }}</h1>
-	<hr>
+	<hr aria-hidden="true">
 	{{ page.content|safe }}
 </article>
 {% endblock content %}
