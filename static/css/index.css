@@ -48,7 +48,3 @@ footer{
 		flex: 100%;
 	}
 }
-#w95, #w95 + map{
-	width: 309px;
-	height: 75px;
-}
