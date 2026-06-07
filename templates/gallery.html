@@ -1,0 +1,114 @@
+{% extends "site.html" %}
+{% block title %}{{ page.title }} - {{ config.author }}{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/css/generic.css">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ config.title }}">
+<meta property="og:title" content="{{ page.title }} - {{ config.author }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ page.permalink }}">
+<meta name="theme-color" content="#FFF7B6">
+<link rel="stylesheet" type="text/css" href="/css/gallery.css">
+{% if page.extra.ogimage %}
+<meta property="og:image" content="{{ config.base_url }}/media/{{ page.extra.og_image }}" />
+{% else %}
+<meta property="og:image" content="{{ config.extra.og_ico }}">
+{% endif %}
+{% if page.extra.video %}
+<meta property="og:video" content="{{ config.base_url }}/media/videos/{{ page.extra.og_video }}" />
+<meta property="og:video:type" content="{{ page.extra.og_video_type }}" />
+<meta property="og:video:width" content="{{ page.extra.og_video_width }}" />
+<meta property="og:video:height" content="{{ page.extra.og_video_height }}" />
+<meta property="og:video:alt" content="{{ page.extra.og_video_alt }}" />
+{% endif %}
+{% endblock head %}
+
+{% block headertext %}
+{% if page.extra.headertext %}
+{{ page.extra.headertext }}
+{% else %}
+{{ page.title }}
+{% endif %}
+{% endblock headertext %}
+
+{% block content %}
+<article class="box">
+	<h1>{{ page.title }}</h1>
+	<hr aria-hidden="true">
+	<div class="gallery_container">
+		<div class="main_gallery">
+			<div class="side_gallery">
+				<button type="button" class="gallery_button btn_left" onclick="moveImage(false)">&lt;</button>
+			</div>
+			<div class="gallery_image">
+				<img id="gallery_img" class="gallery_img" onclick="floater(true)">
+			</div>
+			<div class="side_gallery">
+				<button type="button" class="gallery_button btn_right" onclick="moveImage(true)">&gt;</button>
+			</div>
+			<script>
+				let images = [];
+				let image = 0;
+				//const fs = require('fs');
+				var filePath = '{{ page.extra.datapath }}';
+				// shitty solution, but it works!
+				filePath = filePath.replaceAll("&#x2F;", "/");
+				var content = "";
+				// function floater(show){
+				// 	if(show){
+				// 		document.getElementById("floater").style.width="100%";
+				// 	}else{
+				// 		document.getElementById("floater").style.width="0";
+				// 	}
+				// }
+				function setImage(){
+					var gallery_img = document.getElementById("gallery_img");
+					//var floater_img = document.getElementById("floater_img");
+					gallery_img.src = filePath+images[image]+"?"+Math.random();
+					//floater_img.src = filePath+images[image];
+					document.getElementById("imagespan").innerHTML = "Image "+(image+1)+" of "+images.length;
+				}
+				function moveImage(right){
+					if(images.length<2)
+						return;
+					if(right){
+						image+=1;
+						if(image>=images.length){
+							image=0;
+						}
+					}else{
+						image-=1;
+						if(image<0){
+							image=images.length-1;
+						}
+					}
+					setImage();
+				}
+
+				const respo = fetch(filePath+'files.txt')
+					.then(response => response.arrayBuffer())
+					.then(ab => {
+						var dec = new TextDecoder("utf-8");
+						var bytestring = new Uint8Array(ab);
+						content = dec.decode(bytestring);
+						const lines = content.trim().split(/\r?\n/);
+						for (const line of lines) {
+							images.push(line);
+						}
+						setImage();
+						console.log(images);
+					})
+					.catch(err => console.log(err));
+			</script>
+		</div>
+		<div class="bottext">
+			<span id="imagespan"></span>
+		</div>
+	</div>
+	<!--div id="floater">
+		<img id="floater_img" class="gallery_img" onclick="floater(false)">
+	</div-->
+</article>
+{% endblock content %}

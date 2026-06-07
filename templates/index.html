@@ -1,0 +1,115 @@
+{% extends "site.html" %}
+{% block title %}{{ config.title }}{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/css/index.css">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nomi's website">
+<meta property="og:title" content="Welcome!">
+<meta property="og:description" content="Yes, it really is my website">
+<meta property="og:url" content="{{ config.base_url }}">
+<meta property="og:image" content="{{ config.extra.og_ico }}">
+<meta name="theme-color" content="#FFF7B6">
+{% endblock head %}
+
+{% block headertext %}Main Site{% endblock headertext %}
+
+{% block content %}
+<article class="box">
+	<h2>Welcome to my website<noscript> without javascript</noscript>!</h2>
+	<hr>
+	<h3>Hi, my name is <a href="/about/">{{ macros::icon(icon="face")}}Nomi</a>.</h3>
+	<p>I'm a woman currently residing in <a href="https://youtu.be/2yusdx60_aw">{{ macros::icon(icon="video-box") }}Poland</a>, studying computer spellcasting and other related stuff. If you are not a douchebag feel free to <a href="/about/">message me</a>.</p>
+	<noscript>
+		<p>The only thing that uses javascript on this website are the webrings. You are not really missing out on a lot, lmao.</p>
+	</noscript>
+	<p>This is my very own, personal cave - built with <a href="https://getzola.org/">Zola</a>. Feel free to explore as much as you want (althrough this place is still unfinished).</p>
+	<p>I have no idea when will the next site expansion come. Probably once I am in a better place, mentally.</p>
+	<h3>Stuff I do here</h3>
+	<p>Nothing big, really. I host some web services, but they're only available to my friends.</p>
+	<p>The <a href="/blog/">blog</a> will get rolling one day. If you are reading this, it means that this day has not arrived yet.</p>
+	<p>I am really sorry :P</p>
+	<p>Maybe one day you will be able to read my shitty opinions on extremely niche stuff. For now, you can do that on <a rel="me" href="https://fedi.fabrykajabo.li/@nomi">my fedi profile</a> (dead for now).</p>
+	<h3>Webrings</h3>
+	<noscript>
+	<p>Yeah, so most of the webrings here kinda need javascript to work. They won't even show up in the box due to you disabling it, though.</p>
+	</noscript>
+	<div class="webrings box">
+		<div id="sapphicring1">
+			<a href="https://sunnishinez.neocities.org/webring/sapphicring"><img src="https://sunnishinez.neocities.org/webring/sapphic/swindex.png" alt="sapphic webring" title="sapphic webring"></a><br>
+			<a href="https://sunnishinez.neocities.org/webring/sapphicring?action=previous"><img src="https://sunnishinez.neocities.org/webring/sapphic/swleft.png" alt="previous" title="previous"></a>
+			<a href="https://sunnishinez.neocities.org/webring/sapphicring?action=random">random</a>
+			<a href="https://sunnishinez.neocities.org/webring/sapphicring?action=next"><img src="https://sunnishinez.neocities.org/webring/sapphic/swright.png" alt="next" title="next"></a>
+		</div>
+
+		<map name="w95widget">
+			<area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="0,0,308,22" alt="no ai webring" title="no ai webring">
+			<area href="https://baccyflap.com/noai/?prv&s=nmi" target="_top" shape="rect" coords="56,36,130,58" alt="previous" title="previous">
+			<area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="137,36,211,58" alt="random" title="random">
+			<area href="https://baccyflap.com/noai/?nxt&s=nmi" target="_top" shape="rect" coords="218,36,292,58" alt="next" title="next">
+		</map>
+		<img src="/media/img/w95widget.png" alt="a gray Windows 95 style dialog box titled 'The No AI Webring' with a little icon showing a computer chip in a rubbish bin. beside it are three clickable buttons, labeled Previous, Random... and Next" usemap="#w95widget">
+
+		<div id='gfdkris'> 
+			<script src="https://fabstarotcorner.neocities.org/webring/onionring-variables.js"></script>
+			<script src="https://fabstarotcorner.neocities.org/webring/onionring-widget.js"></script>
+		</div>
+
+		<div id="palestinering">
+			<a href="https://catboo.leprd.space/webring/redirect.php?prv&s=nom" title="previous">
+				<img src="https://websitesforpalestine.neocities.org/widget/left.png" alt="previous">
+			</a>
+			<a href="https://websitesforpalestine.neocities.org/" target="_blank">
+				<img src="https://websitesforpalestine.neocities.org/widget/center.png" alt="websites for a free palestine">
+			</a>
+			<a href="https://catboo.leprd.space/webring/redirect.php?nxt&s=nom" title="next">
+				<img src="https://websitesforpalestine.neocities.org/widget/right.png" alt="next">
+			</a>
+		</div>
+
+		<script src="https://transring.neocities.org/ring.js"></script>
+	</div>
+	<h5>Work in progress...</h5>
+	<div id="wcb" class="carbonbadge wcb-d"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+</article>
+<div class="right_section">
+	<div class="right_box box">
+		<h2>Links</h2>
+		<hr>
+		<ul class="links">
+			<li><a href="https://status.nomi.gay/status/">{{ macros::icon(icon="link-variant") }}Status page</a></li>
+			<li><a href="https://auth.nomi.gay/">{{ macros::icon(icon="link-variant") }}Authentik</a></li>
+			<li><a href="https://drive.nomi.gay/">{{ macros::icon(icon="link-variant") }}Nomdrive</a></li>
+			<li>More stuff about to come soon™</li>
+		</ul>
+	</div>
+	<div class="right_box box">
+		<h2>Button</h2>
+		<hr>
+		<p class="smalltext">If for whatever reason you like this site, are my friend, or just think it would be a good idea to redirect more people here, I have this 88x31 button for you to put on your site:</p>
+		<a href="https://nomi.gay/" target="_blank"><img src="https://file.garden/aMCkWckcsFdLNPpz/button.gif" style="display: block; margin: 10px auto;" alt="An 88x31 animated button showing a snowy nighttime landscape linked to Nomi's website. On it we can see: a seal passing by, a black haired person in a dark dress waving a diagonally divided red and black flag, a falling star, the crescent moon and an aurora."></a>
+		<textarea><a href="https://nomi.gay/" target="_blank"><img src="https://file.garden/aMCkWckcsFdLNPpz/button.gif" alt="An 88x31 animated button showing a snowy nighttime landscape linked to Nomi's website. On it we can see: a seal passing by, a black haired person in a dark dress waving an diagonally divided red and black flag, a falling star, the crescent moon and an aurora."></a></textarea>
+		<p class="smalltext">If you want to scale the button, please include <br><code>image-rendering: pixelated;</code><br> in your CSS. Also, don't be afraid to hotlink it. It was put on file.garden specifically for this purpose.</p>
+	</div>
+</div>
+<footer class="box">
+	{% set buttons = load_data(path="content/data/88x31.json") %}
+	<h4>Generic 88x31's (not mine)</h4>
+	<div class="buttons">
+		{% for being in buttons["other"] %}
+		<div class="button"><a href="{{ being.site_url }}" target="_blank"><img src="{% if being.remote_url %}{{ being.remote_url }}{% else %}/media/88x31/other/{{ being.local_url }}{% endif %}" title="{{ being.title }}" alt="{{ being.alt_text }}" loading="lazy"></a></div>
+		{% endfor %}
+	</div>
+	<p>
+	</p>
+	<h4>Frens and other beings I found while browsing the web (very much not mine, except the first one):</h4>
+	<div class="buttons">
+		{% for being in buttons["beings"] %}
+		<div class="button"><a href="{{ being.site_url }}" target="_blank"><img src="{% if being.remote_url %}{{ being.remote_url }}{% else %}/media/88x31/beings/{{ being.local_url }}{% endif %}" title="{{ being.title }}" alt="{{ being.alt_text }}" loading="lazy"></a></div>
+		{% endfor %}
+	</div>
+	Content (<a href="https://github.com/Ithko/nomi.gay">source</a>) licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">{{ macros::icon(icon="copyright") }}CC BY-NC-SA 4.0</a>. Made by <a href="/about/">Nomi</a>.
+</footer>
+{% endblock content %}
